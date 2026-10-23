@@ -1,0 +1,8 @@
+INFO: database started
+ERROR: ORA-00600 internal error
+INFO: backup completed
+ERROR: ORA-01555 snapshot too old
+INFO: listener started
+WARNING: tablespace 90% full
+ERROR: ORA-00060 deadlock detected
+INFO: user login successful

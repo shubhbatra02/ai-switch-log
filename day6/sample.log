@@ -1,0 +1,14 @@
+Thu Oct 22 10:01:11 2026
+Starting ORACLE instance (normal)
+Thu Oct 22 10:01:11 2026 ORA-00600: internal error code, arguments: [kcbz_check_objd_typ]
+Thread 1 advanced to log sequence 4521
+Thu Oct 22 10:01:11 2026 ORA-01555: snapshot too old: rollback segment number 4 too small
+Thu Oct 22 10:01:11 2026 ORA-00060: deadlock detected while waiting for resource
+Completed: ALTER DATABASE OPEN
+Thu Oct 22 10:01:11 2026 ORA-01555: snapshot too old: rollback segment number 7 too small
+Thu Oct 22 10:01:11 2026 ORA-00600: internal error code, arguments: [kdsgrp1]
+ORA-01555: snapshot too old: rollback segment number 4 too small
+INFO: listener started
+WARNING: tablespace 90% full
+Thu Oct 22 10:01:11 2026 ORA-00060: deadlock detected
+INFO: user login successful

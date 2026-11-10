@@ -1,6 +1,6 @@
 import requests
 import json
-
+import math
 url="http://localhost:11434/api/embed"
 model="embeddinggemma-2:latest"
 
@@ -33,10 +33,24 @@ print(results[0][0:5])
 print(results[1][0:5])
 print(results[2][0:5])
 
-query=embed("my long query failed because undo was overwritten")
+query=embed("my long query failed because of insufficient undo space")
 print(query[0:5])
 
 
+
+
+
+def cosine(a,b):
+    dotproduct= sum(x * y for x,y in zip(a,b))
+    len_a=math.sqrt(sum(x**2 for x in a))
+    len_b=math.sqrt(sum(y**2 for y in b))
+    if len_a == 0 or len_b == 0:
+        return 0.0
+    return dotproduct/(len_a*len_b)
+
+
+for result in results:
+    print(cosine(result,query))
 #result=embed("my long query failed because undo was overwritten")
 #print(len(result))
 #print(result[0:5])
